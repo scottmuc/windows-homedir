@@ -1,0 +1,19 @@
+
+/.ssh
+
+/AppData
+/Contacts
+/Desktop
+/Documents
+/Downloads
+/Favorites
+/Links
+/Music
+/Pictures
+/Saved Games
+/Searches
+/Videos
+
+/NTUSER*
+
+/_viminfo
