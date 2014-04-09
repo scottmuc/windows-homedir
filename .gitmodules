@@ -1,15 +1,9 @@
-[submodule ".vim/bundle/molokai"]
-	path = .vim/bundle/molokai
+[submodule "vimfiles/bundle/molokai"]
+	path = vimfiles/bundle/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
+[submodule "vimfiles/bundle/ctrlp"]
+	path = vimfiles/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/puppet"]
-	path = .vim/bundle/puppet
-	url = git://github.com/rodjek/vim-puppet.git
-[submodule ".vim/bundle/vagrant"]
-	path = .vim/bundle/vagrant
-	url = git://github.com/markcornick/vim-vagrant.git
