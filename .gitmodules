@@ -10,3 +10,6 @@
 [submodule "vimfiles/bundle/vim-powershell"]
 	path = vimfiles/bundle/vim-powershell
 	url = git@github.com:PProvost/vim-ps1.git
+[submodule "vimfiles/bundle/vim-puppet"]
+	path = vimfiles/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
