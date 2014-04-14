@@ -59,6 +59,7 @@ let maplocalleader=","
 autocmd BufRead,BufNewFile *.md set wm=2 tw=120
 autocmd BufRead,BufNewFile *.markdown set wm=2 tw=120
 autocmd BufRead,BufNewFile soloistrc set ft=yaml
+autocmd BufRead,BufNewFile *.ps1 set tabstop=4 softtabstop=4 shiftwidth=4
 
 "----------------------------------------------------------
 " NERD Tree plugin settings

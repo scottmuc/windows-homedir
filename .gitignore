@@ -1,6 +1,7 @@
 
 /.cache
 /.ssh
+/.vagrant.d
 
 /AppData
 /Contacts
@@ -18,3 +19,9 @@
 /NTUSER*
 
 /_viminfo
+
+/.NERDTreeBookmarks
+/.VirtualBox
+/VirtualBox VMs
+
+/code
