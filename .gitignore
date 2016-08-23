@@ -1,16 +1,22 @@
 
+/.bundle
 /.cache
+/.gem
 /.ssh
 /.vagrant.d
+/.vscode
 
 /AppData
 /Contacts
 /Desktop
 /Documents
 /Downloads
+/Dropbox
 /Favorites
+/IntelGraphicsProfiles
 /Links
 /Music
+/OneDrive
 /Pictures
 /Saved Games
 /Searches
@@ -18,6 +24,7 @@
 
 /NTUSER*
 
+/.viminfo
 /_viminfo
 
 /.NERDTreeBookmarks
