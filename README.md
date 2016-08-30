@@ -21,3 +21,4 @@ START http://boxstarter.org/package/url?%HOMEDIR%\boxstarter.txt
 
 * Change windows performance settings to only have font smoothing enabled
 
+[osx-homedir]: https://github.com/scottmuc/osx-homedir
