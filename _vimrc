@@ -26,8 +26,6 @@ set autoindent
 set hidden
 set nu
 
-colorscheme molokai
-
 set nostartofline
 set scrolloff=6
 set listchars=trail:.,tab:\|\ 
