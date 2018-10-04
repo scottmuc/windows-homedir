@@ -6,6 +6,7 @@
 /.vagrant.d
 /.vscode
 
+/3D Objects
 /AppData
 /Contacts
 /Desktop
@@ -17,6 +18,7 @@
 /Links
 /Music
 /OneDrive
+/MicrosoftEdgeBackups
 /Pictures
 /Saved Games
 /Searches
@@ -27,6 +29,7 @@
 /.viminfo
 /_viminfo
 
+/.bash_history
 /.NERDTreeBookmarks
 /.VirtualBox
 /VirtualBox VMs
