@@ -35,3 +35,8 @@ START http://boxstarter.org/package/url?%HOMEDIR%\boxstarter.txt
   type as if I have a US QWERTY layout
 * Need to install Boxstarter first before the other things
 * Create ssh key on separate machine first and put on the repave USB stick
+
+##### October 5 2018
+
+* Went smoothly with the ssh keys transfered from previous build as well as the boxstarter downoad
+* Set the task bar config plus more Explorer config in the boxstarter.txt
