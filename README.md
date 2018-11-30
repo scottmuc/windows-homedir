@@ -4,6 +4,10 @@ This repository is analagous to the one that is used for [Mac OSX][osx-homedir] 
 automation. Of course there are going to be some subtle differences because of the platform
 differences.
 
+Here's my [primary influence][primary-influence].
+
+[primary-influence]: http://forum.notebookreview.com/threads/guide-clean-install-windows-10-after-m-2-nvme-ssd-upgrade.787420/
+
 ### Bootstrapping a brand spanking new machine
 
 ```
