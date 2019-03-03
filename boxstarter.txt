@@ -7,13 +7,17 @@ function Remove-App
     Param ([string]$appName)
     Write-Output "Trying to remove $appName"
     Get-AppxPackage $appName -AllUsers | Remove-AppxPackage
-    Get-AppXProvisionedPackage -Online | Where DisplayNam -like $appName | Remove-AppxProvisionedPackage -Online
+    Get-AppXProvisionedPackage -Online | Where DisplayName -like $appName | Remove-AppxProvisionedPackage -Online
 }
 
 #--- Uninstall unwanted default apps ---
 
+# Get a list of existing applications by running:
+#
+# Get-AppxPackage | % { $_.Name }
+
 $applicationList = @(
-    "Microsoft.BingFinance"
+    "Microsoft.Bing*"
     "Microsoft.3DBuilder"
     "Microsoft.CommsPhone"
     "Microsoft.Getstarted"
@@ -27,13 +31,12 @@ $applicationList = @(
     "Microsoft.MicrosoftStickyNotes"
     "Microsoft.Office.Sway"
 
-#    "Microsoft.XboxApp"
-#    "Microsoft.XboxIdentityProvider"
+    "Microsoft.Xbox*"
 
     "Microsoft.NetworkSpeedTest"
     "Microsoft.Print3D"
 
-    #Non-Microsoft
+    "Microsoft.ZuneMusic"
 
     "*Autodesk*"
     "*BubbleWitch*"
@@ -41,6 +44,7 @@ $applicationList = @(
     "*Dell*"
     "*Dropbox*"
     "*Facebook*"
+    "Fitbit.FitbitCoach"
     "*Keeper*"
     "*Twitter*"
     "*Plex*"
@@ -56,25 +60,14 @@ foreach ($app in $applicationList) {
 Set-WindowsExplorerOptions `
   -EnableShowFileExtensions
 
-#  -EnableShowHiddenFilesFoldersDrives `
-#  -EnableShowProtectedOSFiles `
-#  -EnableShowFileExtensions `
-#  -EnableShowFullPathInTitleBar `
-#  -DisableOpenFileExplorerToQuickAccess `
-#  -DisableShowRecentFilesInQuickAccess `
-#  -DisableShowFrequentFoldersInQuickAccess `
-#  -EnableExpandToOpenFolder `
-#  -DisableShowRibbon
-
 Set-TaskbarOptions -Size Small -Lock -Dock Top
-
-#  -Combine Always `
-#  -AlwaysShowIconsOn
 
 # Switchings CAPSLOCK to CTRL
 $hexified = "00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00".Split(',') | % { "0x$_"}
 $kbLayout = 'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'
 New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Value ([byte[]]$hexified)
+
+choco install -y git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"'
 
 choco install goggalaxy
 choco install steam
@@ -82,5 +75,3 @@ choco install steam
 choco install googlechrome
 
 choco install 1password
-
-choco install libreoffice

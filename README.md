@@ -10,15 +10,16 @@ Here's my [primary influence][primary-influence].
 
 ### Bootstrapping a brand spanking new machine
 
+Thanks [Rich Turner][rich-turner-boxstarter] for your excellent example!
+
+[rich-turner-boxstarter]: https://gist.github.com/bitcrazed/c788f9dcf1d630340a19
+
+Launch Powershell with elevated privileges:
+
 ```
-START http://boxstarter.org/package/git
-
-git init
-git remote add origin git@github.com:scottmuc/windows-homedir.git
-git fetch --all
-git checkout master
-
-START http://boxstarter.org/package/url?%HOMEDIR%\boxstarter.txt
+Set-ExecutionPolicy Unrestricted
+. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
+Install-BoxstarterPackage -DisableReboots -PackageName https://raw.githubusercontent.com/scottmuc/windows-homedir/master/boxstarter.txt
 ```
 
 **Post bootstrap TODO**
