@@ -31,10 +31,13 @@ $applicationList = @(
     "Microsoft.MicrosoftStickyNotes"
     "Microsoft.Office.Sway"
 
+#    "Microsoft.XboxApp"
+#    "Microsoft.XboxIdentityProvider"
+
     "Microsoft.NetworkSpeedTest"
     "Microsoft.Print3D"
 
-    "Microsoft.ZuneMusic"
+    #Non-Microsoft
 
     "*Autodesk*"
     "*BubbleWitch*"
@@ -42,7 +45,6 @@ $applicationList = @(
     "*Dell*"
     "*Dropbox*"
     "*Facebook*"
-    "Fitbit.FitbitCoach"
     "*Keeper*"
     "*Twitter*"
     "*Plex*"
@@ -50,6 +52,7 @@ $applicationList = @(
     "*.EclipseManager"
     "ActiproSoftwareLLC.562882FEEB491" # Code Writer
     "*.AdobePhotoshopExpress");
+
 
 foreach ($app in $applicationList) {
     Remove-App $app
