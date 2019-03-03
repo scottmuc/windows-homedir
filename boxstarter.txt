@@ -17,7 +17,7 @@ function Remove-App
 # Get-AppxPackage | % { $_.Name }
 
 $applicationList = @(
-    "Microsoft.Bing*"
+    "Microsoft.BingFinance"
     "Microsoft.3DBuilder"
     "Microsoft.CommsPhone"
     "Microsoft.Getstarted"
@@ -30,8 +30,6 @@ $applicationList = @(
     "*Solitaire*"
     "Microsoft.MicrosoftStickyNotes"
     "Microsoft.Office.Sway"
-
-    "Microsoft.Xbox*"
 
     "Microsoft.NetworkSpeedTest"
     "Microsoft.Print3D"
