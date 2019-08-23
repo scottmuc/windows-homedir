@@ -76,4 +76,5 @@ choco install steam
 
 choco install googlechrome
 
-choco install 1password
+# This seems to fail to install
+# choco install 1password
