@@ -70,7 +70,8 @@ New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Valu
 
 choco install -y git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"'
 
-choco install goggalaxy
+# downloading gog seems to hang
+# choco install goggalaxy
 choco install steam
 
 choco install googlechrome
