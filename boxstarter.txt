@@ -69,12 +69,3 @@ $kbLayout = 'HKLM:\System\CurrentControlSet\Control\Keyboard Layout'
 New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Value ([byte[]]$hexified)
 
 choco install -y git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"'
-
-# downloading gog seems to hang
-# choco install goggalaxy
-choco install steam
-
-choco install googlechrome
-
-# This seems to fail to install
-# choco install 1password
